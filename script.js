@@ -92,17 +92,14 @@ window.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("typing-header");
   const text = "Halo, Saya Nazwa";
   let i = 0;
-
-  header.textContent = ""; // kosongin dulu
-
+  header.textContent = ""; 
   function typing() {
     if (i < text.length) {
       header.textContent += text.charAt(i);
       i++;
-      setTimeout(typing, 120); // kecepatan ketik
+      setTimeout(typing, 120); 
     }
   }
-
   typing();
 });
 

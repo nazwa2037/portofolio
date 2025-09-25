@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 
-/* Navbar */
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -23,7 +23,7 @@ nav {
   z-index: 10;
 }
 
-/* Logo */
+
 nav .logo {
   font-size: 18px;
   font-weight: bold;
@@ -46,7 +46,7 @@ nav .nav-links a:hover {
   color: #f5cbcb;
 }
 
-/* Hamburger */
+
 .hamburger {
   display: none;
   font-size: 26px;
@@ -54,7 +54,7 @@ nav .nav-links a:hover {
   color: #fff;
 }
 
-/* Hero Section */
+
 .hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -136,7 +136,7 @@ nav .nav-links a:hover {
   transform: translateY(30px);
 }
 
-/* About */
+
 .about {
   padding: 80px 20px;
   background: #f6ead8;
@@ -176,7 +176,7 @@ nav .nav-links a:hover {
   margin: 15px 0 25px 0;
 }
 
-/* Projects */
+
 .projects {
   padding: 80px 60px;
   background: #f6ead8;
@@ -219,7 +219,7 @@ nav .nav-links a:hover {
   line-height: 1.5;
 }
 
-/* Contact */
+
 .contact {
   padding: 80px 60px;
   background: #f6ead8;
@@ -249,7 +249,7 @@ nav .nav-links a:hover {
   transform: scale(1.1);
 }
 
-/* Fade effects */
+
 .fade {
   opacity: 0;
   transform: translateY(30px);
@@ -269,7 +269,7 @@ nav .nav-links a:hover {
   transform: translateY(0);
 }
 
-/* Typing effect */
+
 .typing {
   font-size: 2.5rem;
   font-weight: bold;
@@ -284,7 +284,8 @@ nav .nav-links a:hover {
   to { width: 16ch; }
 }
 
-/* Tablet (max 1024px) */
+
+/* tampilan tab */
 @media (max-width: 1024px) {
   nav {
     padding: 15px 40px;
@@ -301,7 +302,7 @@ nav .nav-links a:hover {
   }
 }
 
-/* Mobile (max 768px) */
+/* tampilan mobile */
 @media (max-width: 768px) {
   nav {
     justify-content: space-between;
@@ -365,7 +366,6 @@ nav .nav-links a:hover {
   }
 }
 
-/* Small Mobile (max 480px) */
 @media (max-width: 480px) {
   .hero-text h1 {
     font-size: 1.6rem;
