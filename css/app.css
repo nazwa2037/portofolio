@@ -273,3 +273,130 @@ body {
     background: #a8503f;
     border-radius: 10px;
 }
+
+
+/* ============ X-Banner standee mockup (Other Design Projects) ============ */
+.xbanner-mockup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(110px, 24vw, 175px);
+    animation: float 5.5s ease-in-out infinite;
+    transition: transform 0.4s ease;
+}
+
+.xbanner-mockup:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.xbanner-panel {
+    width: 100%;
+    aspect-ratio: 60 / 160;
+    background: #fff8f2;
+    border-radius: 3px;
+    padding: 4px;
+    box-shadow: 0 25px 40px -16px rgba(43, 13, 15, 0.55);
+    border: 2px solid rgba(254, 215, 184, 0.15);
+}
+
+.xbanner-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1px;
+}
+
+.xbanner-stand {
+    position: relative;
+    width: 55%;
+    height: 22px;
+    margin-top: -1px;
+}
+
+.xbanner-leg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, #4a4a4d, #1c1c1e);
+    transform-origin: top center;
+}
+
+.xbanner-leg-left {
+    transform: translateX(-50%) rotate(24deg);
+}
+
+.xbanner-leg-right {
+    transform: translateX(-50%) rotate(-24deg);
+}
+
+.xbanner-foot {
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    right: -4px;
+    height: 3px;
+    background: #1c1c1e;
+    border-radius: 2px;
+}
+
+
+.design-frame {
+    background: #fff8f2;
+    border-radius: 18px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 22px 35px -14px rgba(43, 13, 15, 0.45);
+    animation: float 6s ease-in-out infinite;
+    transition: transform 0.4s ease;
+}
+
+.design-frame:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.design-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.design-frame-square {
+    width: clamp(90px, 20vw, 140px);
+    aspect-ratio: 1 / 1;
+}
+
+.design-frame-square img {
+    object-fit: contain;
+}
+
+.design-frame-photo {
+    width: clamp(90px, 20vw, 140px);
+    aspect-ratio: 4 / 5;
+}
+
+.design-frame-photo img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.design-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(254, 215, 184, 0.55);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .xbanner-mockup,
+    .design-frame {
+        animation: none;
+    }
+}
